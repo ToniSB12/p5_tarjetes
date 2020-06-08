@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes_felxbox</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            font-family: "Georgia"cursive;
+            font-size: 18px;
+            background: linear-gradient(38deg, rgb(2000, 110, 140), blue);
+            color: purple;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 2em 4em;
+            justify-content: center;
+        }
+
+        .dissenyador {
+            display: flex;
+            flex-direction: column;
+            width: 25em;
+            background: rgba(240, 240, 240, 0.9);
+            border-radius: 15px;
+            margin: 1em;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .dissenyador_img img {
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+
+        }
+
+        .dissenyador:first-child .dissenyador_img img {
+            object-position: center;
+        }
+
+        .dissenyador:last-child .dissenyador_img img {
+            object-position: center;
+        }
+
+        header {
+            display: flex;
+            margin: 0.5em 1em;
+            justify-content: space-between;
+            border-bottom: 1px solid purple;
+            align-items: baseline;
+        }
+
+        h3 {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+
+        .dissenyador_contingut {
+            flex-grow: 1;
+            margin: 1em 1em 0.5em 1em;
+            font-size: 0.9em;
+            line-height: 1.4em;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        footer {
+            background: purple;
+            color: white;
+            font-size: 0.9em;
+            font-style: italic;
+            border-radius: 0 0 20px 20px;
+            padding: 0.6em;
+        }
+
+        @media (max-width:600px) {
+            body {
+                font-size: 16px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dissenyador">
+            <div class="dissenyador_img">
+                <img src="img/img-1290.jpg" alt="Casey Reas">
+
+            </div>
+            <header>
+                <h3>Casey Reas</h3>
+                <span>1972</span>
+            </header>
+            <p class="dissenyador_contingut">
+                Artista estadounidense cuyas obras de arte conceptual, procesal y minimalista exploran ideas a través de la lente contemporánea del software. Reas es quizás mejor conocido por haber creado, con Ben Fry , el lenguaje de programación Processing .
+                Después de graduarse, Reas comenzó a exhibir su software e instalaciones a nivel internacional en galerías y festivales. Las imágenes generadas por software de Reas derivan de breves instrucciones basadas en software que visualizan procesos de creación. Las instrucciones se expresan en diferentes medios, incluyendo lenguaje natural, código de máquina y simulaciones por computadora, lo que resulta en imágenes dinámicas y estáticas. Cada traducción revela una perspectiva diferente del proceso y se combina con las otras para producir rastros visuales en continua evolución.
+            </p>
+            <footer class="dissenyador_peu">
+                Casey Edwin Barker Reas nacido en 1972
+                Desde 2012, Reas ha incorporado imágenes de difusión en su trabajo, distorsionándolas algorítmicamente para crear abstracciones que retienen rastros de su función representativa original.
+            </footer>
+        </div>
+
+        <div class="dissenyador">
+            <div class="dissenyador_img">
+                <img src="img/portrait_vera-molnar_aware_women-artists_artistes-femmes-1500x1125.jpg" alt="Vera Molnar">
+            </div>
+            <header>
+                <h3>Vera Molnar</h3>
+                <span>1924</span>
+
+            </header>
+            <p class="dissenyador_contingut">
+                En 1948, es decir, a los 24 años, realiza sus primeros dibujos geómetricos inspirado en un grabado de Durero titulado “Melancolía”. En 1967 fue cofundadora del grupo Arte e informatique en el Institut d’Esthétiqueet des Sciences de l’Art de París. El año 1968 fue muy importante para lo que sería el resto de su carrera artística ya que fue el año donde realizó sus primeros gráficos utilizando una computadora. Y, a partir de allí, gran parte de sus obras sería realizadas por esta vía. A los 61 años, siendo ya una artista reconocida, comienza a ejercer el cargo de profesora de Historia del Arte y Ciencias del Arte en la Sorbona de París. En el 2005 obtiene el primer d.velop digital art award del Digital Art Museum de Berlín. Vera Molnar expone actualmente a nivel internacional e intercontinental y es considerada una de las pioneras del arte digital. Sus obras se caracterizan por ser series en la que la figura principal es el cuadrado.
+            </p>
+            <footer class="dissenyador_peu">
+                Vera Molnar. Nació el 5 de enero de 1924 en Budapest, Hungría.
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
